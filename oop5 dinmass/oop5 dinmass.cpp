@@ -9,13 +9,13 @@ double * NewMass(int N) {
 
 void ToFill(double *m, int N) {
     for (int i = 0; i < N; i++) {
-        cout << "Введите значение " << i+1 << "-й ячейки: ";
+        cout << "Enter " << i+1 << " cell value: ";
         cin >> m[i];
     }
 }
 
 void Print(double* m, int N) {
-    cout << "Ваш массив:" << endl;
+    cout << "Your array:" << endl;
     for (int i = 0; i < N; i++) {
         cout << m[i] << "; ";
     }

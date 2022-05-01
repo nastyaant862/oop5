@@ -5,15 +5,14 @@ using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "ru");
     int N;
     bool f;
 
-    cout << "—оздать новый массив? 1 Ч если да, 0 Ч если нет: ";
+    cout << "Create new array? 1 - yes, 0 - no: ";
     cin >> f;
 
     while (f) {
-        cout << "¬ведите размер массива: ";
+        cout << "Enter array size: ";
         cin >> N;
 
         double *mass = NewMass(N);
@@ -22,7 +21,7 @@ int main()
         Delete(mass);
 
         cout << endl;
-        cout << "—оздать новый массив? 1 Ч если да, 0 Ч если нет: ";
+        cout << "Create new array? 1 - yes, 0 - no: ";
         cin >> f;
     }
 }
